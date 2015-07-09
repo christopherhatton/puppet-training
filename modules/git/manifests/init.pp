@@ -56,16 +56,16 @@ file { "/home/chris/.ssh/known_hosts":
     mode => 0600,
     require => File['/home/chris/.ssh'],
 }
-
-
-file { "/usr/local/app":
-    ensure => directory,
-    owner => 'chris',
-    group => 'chris',
-    mode => 755,
 }
 
-git::clone { '<GitHub repository name>':
-    path => '/usr/local/app',
-    dir => 'django',
-}
+#file { "/usr/local/app":
+#    ensure => directory,
+#    owner => 'chris',
+#    group => 'chris',
+#    mode => 755,
+#}
+
+#git::clone { '<GitHub repository name>':
+#    path => '/usr/local/app',
+#    dir => 'django',
+#}
