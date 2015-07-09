@@ -3,6 +3,7 @@ node default {
 include users
 include ssh
 include postgres
-include git
-
+include git::install
+include git::keys
+#include git::clone
 }
